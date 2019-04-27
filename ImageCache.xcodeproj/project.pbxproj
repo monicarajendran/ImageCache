@@ -12,7 +12,19 @@
 		DD83BDA3226059B0002D950E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD83BDA1226059B0002D950E /* Main.storyboard */; };
 		DD83BDA5226059B4002D950E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD83BDA4226059B4002D950E /* Assets.xcassets */; };
 		DD83BDA8226059B4002D950E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD83BDA6226059B4002D950E /* LaunchScreen.storyboard */; };
+		DD83BDB0226059E6002D950E /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83BDAF226059E6002D950E /* ImageProcessor.swift */; };
+		DD83BDC022605A42002D950E /* ImageProcessorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83BDBF22605A42002D950E /* ImageProcessorTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD83BDBA22605A27002D950E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD83BD92226059AF002D950E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD83BD99226059AF002D950E;
+			remoteInfo = ImageCache;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DD83BD9A226059B0002D950E /* ImageCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +34,21 @@
 		DD83BDA4226059B4002D950E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD83BDA7226059B4002D950E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD83BDA9226059B4002D950E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD83BDAF226059E6002D950E /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		DD83BDB522605A27002D950E /* ImageCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD83BDB922605A27002D950E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD83BDBF22605A42002D950E /* ImageProcessorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DD83BD97226059AF002D950E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD83BDB222605A27002D950E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				DD83BD9C226059B0002D950E /* ImageCache */,
+				DD83BDB622605A27002D950E /* ImageCacheTests */,
 				DD83BD9B226059B0002D950E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				DD83BD9A226059B0002D950E /* ImageCache.app */,
+				DD83BDB522605A27002D950E /* ImageCacheTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +81,22 @@
 			children = (
 				DD83BD9D226059B0002D950E /* AppDelegate.swift */,
 				DD83BD9F226059B0002D950E /* ViewController.swift */,
+				DD83BDAF226059E6002D950E /* ImageProcessor.swift */,
 				DD83BDA1226059B0002D950E /* Main.storyboard */,
 				DD83BDA4226059B4002D950E /* Assets.xcassets */,
 				DD83BDA6226059B4002D950E /* LaunchScreen.storyboard */,
 				DD83BDA9226059B4002D950E /* Info.plist */,
 			);
 			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		DD83BDB622605A27002D950E /* ImageCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD83BDBF22605A42002D950E /* ImageProcessorTest.swift */,
+				DD83BDB922605A27002D950E /* Info.plist */,
+			);
+			path = ImageCacheTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +119,24 @@
 			productReference = DD83BD9A226059B0002D950E /* ImageCache.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DD83BDB422605A27002D950E /* ImageCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD83BDBC22605A27002D950E /* Build configuration list for PBXNativeTarget "ImageCacheTests" */;
+			buildPhases = (
+				DD83BDB122605A27002D950E /* Sources */,
+				DD83BDB222605A27002D950E /* Frameworks */,
+				DD83BDB322605A27002D950E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD83BDBB22605A27002D950E /* PBXTargetDependency */,
+			);
+			name = ImageCacheTests;
+			productName = ImageCacheTests;
+			productReference = DD83BDB522605A27002D950E /* ImageCacheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +149,10 @@
 				TargetAttributes = {
 					DD83BD99226059AF002D950E = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					DD83BDB422605A27002D950E = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = DD83BD99226059AF002D950E;
 					};
 				};
 			};
@@ -113,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				DD83BD99226059AF002D950E /* ImageCache */,
+				DD83BDB422605A27002D950E /* ImageCacheTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD83BDB322605A27002D950E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,11 +201,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD83BDA0226059B0002D950E /* ViewController.swift in Sources */,
+				DD83BDB0226059E6002D950E /* ImageProcessor.swift in Sources */,
 				DD83BD9E226059B0002D950E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD83BDB122605A27002D950E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD83BDC022605A42002D950E /* ImageProcessorTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD83BDBB22605A27002D950E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD83BD99226059AF002D950E /* ImageCache */;
+			targetProxy = DD83BDBA22605A27002D950E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DD83BDA1226059B0002D950E /* Main.storyboard */ = {
@@ -312,6 +394,44 @@
 			};
 			name = Release;
 		};
+		DD83BDBD22605A27002D950E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ImageCacheTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.monica.ImageCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageCache.app/ImageCache";
+			};
+			name = Debug;
+		};
+		DD83BDBE22605A27002D950E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ImageCacheTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.monica.ImageCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageCache.app/ImageCache";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +449,15 @@
 			buildConfigurations = (
 				DD83BDAD226059B4002D950E /* Debug */,
 				DD83BDAE226059B4002D950E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD83BDBC22605A27002D950E /* Build configuration list for PBXNativeTarget "ImageCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD83BDBD22605A27002D950E /* Debug */,
+				DD83BDBE22605A27002D950E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
